@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>olx</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <img src="/img/logo-olx.png" alt="Website-Logo">
+            <div class="country-selector" id="country">
+                <div class="select">
+                    <p><i class="fa-solid fa-magnifying-glass m-text"></i></p>
+                    <p id="country-text">Select your Country</p>
+                    <i class="fa-solid fa-chevron-down" id="move-up"></i>
+                </div>
+                <ul class="option-dock" id="country-list">
+                    <li class="option" onclick="myCountry('India')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>India</p>
+                    </li>
+                    <li class="option" onclick="myCountry('Japan')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Japan</p>
+                    </li>
+                    <li class="option" onclick="myCountry('USA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>USA</p>
+                    </li>
+                    <li class="option" onclick="myCountry('Canada')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Canada</p>
+                    </li>
+                    <li class="option" onclick="myCountry('Russia')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Russia</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <input type="text" class="searcher" id="search-dock" placeholder="Find Cars, Mobile Phones and more...">
+                <p><i class="fa-solid fa-magnifying-glass"></i></p>
+            </div>
+            <div class="language-box">
+                <p id="eng-lan">ENGLISH</p>
+                <ul class="eng-hin">
+                    <li onclick="languageFunc('ENGLISH')">ENGLISH</li>
+                    <li onclick="languageFunc('हिंदी')">हिंदी</li>
+                </ul>
+                <i class="fa-solid fa-chevron-down" id="move-up"></i>
+            </div>
+            <div class="login-box">
+                <div class="cm-login" id="login-dock">
+                    <p>Login</p>
+                </div>
+            </div>
+            <div class="sell-box">
+                <div class="sell-img">
+                    <img src="/img/sell.png" alt="SELL">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="category-selector" id="category-dock">
+        <div class="menubar">
+            <div class="category">
+                <p id="category-text">ALL CATEGORIES</p>
+                <i class="fa-solid fa-chevron-down" id="move-up"></i>
+            </div>
+            <div class="m-item">Cars</div>
+            <div class="m-item">Motorcycles</div>
+            <div class="m-item">Mobile Phones</div>
+            <div class="m-item">For Sale: Houses & Apartments</div>
+            <div class="m-item">Scooters</div>
+            <div class="m-item">Commercial & Other Vehicles</div>
+            <div class="m-item">For Rent: Houses & Apartments</div>
+        </div>
+    </div>
+
+    <div class="sell-banner">
+        <div class="b-img">
+            <img src="/img/sell-car.png" alt="Sell Car">
+        </div>
+    </div>
+
+    <div class="ads-container m-width">
+        <h1>Fresh recommendations</h1>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
